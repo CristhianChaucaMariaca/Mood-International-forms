@@ -1,0 +1,5 @@
+mixin plato_body(plates,nombre)
+    .content__plate
+        each plato in plates.content
+            if(plato.text == nombre) 
+                +plato(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,sponsor[0],plates.category)

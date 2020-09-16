@@ -1,0 +1,9 @@
+@font-face{
+    font-family: "font1";
+    src: url($font) format('truetype');
+}
+$font:"font1";
+body{
+    font-family: $font;
+    font-size: 12pt;
+}
