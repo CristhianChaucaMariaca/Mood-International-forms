@@ -1,20 +1,21 @@
 
 .headerdishes{
-    font-size: 1.1em;
-    background-color: $colorprimario;
+    font-size: 1.7em;
     color:$colorsecundario;
     padding-bottom: 3px;
-    padding-top: 3px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
     position: relative;
+    font-family: $font;
+    text-align: center;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
 }
 .dishes{
     display: grid;
-    grid-template-columns: repeat(4, minmax(190px,1fr));
+    grid-template-columns: repeat(3, minmax(190px,224px));
     grid-column-gap: 40px;
     grid-row-gap: 30px;
     margin-bottom: 70px;
+    justify-content: center;
     &__link{
         text-decoration:none;
         width: 100%;
@@ -39,11 +40,15 @@
         text-align: center;
         width: 100%;
         display: block;
+        font-size: 1em;
+    }
+    &__price{
+        font-size: 1em;
     }
     &__name{
         text-align: center;
-        font-size: 1.3em;
-        color:$colorprimario;
+        color:$colorsecundario;
         justify-content: center;
+        font-family: $font-b;
     }
 }

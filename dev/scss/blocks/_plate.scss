@@ -4,17 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .plate{
     width: 420px;
-    // margin-top: 50px;
     &__logo{
-        position: absolute;
-        right: 15px;
-        top:0;
-        transform:translateY(-40%);
         width: 130px;
-        z-index: 100;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     &__img{
         position: relative;
@@ -33,25 +32,27 @@
         transition: transform 5.5s linear;
     }
     &__body{
-        color: $colorprimario;
+        color: $colorsecundario;
         padding-left: 30px;
         padding-right: 30px;
     }
     &__title{
-        font-size: 1.6em;
+        font-size: 1.2em;
         margin-top: 10px;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
         text-align: center;
-        text-transform: uppercase;
+        font-family: $font-b;
     }
     &__price{
         text-align: center;
         font-size: 1.1em;
+        font-family: $font-b;
     }
     &__text{
-        font-size: 1.1em;
-        margin-top: 7px;
+        font-size: 1em;
         text-align: center;
+        font-family: $font-l;
+        margin-bottom: 10px;
     }
     &__pepsi{
         width: 40px;

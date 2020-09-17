@@ -1,9 +1,19 @@
 @font-face{
     font-family: "font1";
-    src: url($font) format('truetype');
+    src: url($font-primary) format('truetype');
+}
+@font-face{
+    font-family: "bold";
+    src: url($font-secondary-b) format('truetype');
+}
+@font-face{
+    font-family: "light";
+    src: url($font-secondary-l) format('truetype');
 }
 $font:"font1";
+$font-b:"bold";
+$font-l:"light";
 body{
-    font-family: $font;
+    font-family: $font-l;
     font-size: 12pt;
 }

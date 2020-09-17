@@ -34,3 +34,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+.cotainer_full{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
