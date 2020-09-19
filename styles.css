@@ -336,19 +336,12 @@ body {
 }
 .titulo__content {
   text-align: center;
-  width: 14em;
-  position: relative;
   margin: 0 auto;
+  font-family: "bold";
 }
 .titulo__text {
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-  width: 90%;
-  transform: translateY(42%) translateX(-50%);
   color: #000;
   font-size: 1.35em;
-  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1366px) {
