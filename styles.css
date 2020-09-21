@@ -377,14 +377,6 @@ body {
   .menu__item {
     width: 160px;
   }
-  .menu__item:last-child {
-    grid-row-start: auto;
-    grid-column-end: auto;
-  }
-  .menu__item:nth-last-child(2) {
-    grid-row-start: auto;
-    grid-column-end: auto;
-  }
 
   .header__logo {
     width: 250px;
