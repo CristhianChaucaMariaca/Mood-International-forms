@@ -344,6 +344,40 @@ body {
   font-size: 1.35em;
 }
 
+.sponsors {
+  width: 100%;
+  max-width: 100%;
+}
+.sponsors__content {
+  width: 60px;
+  align-self: start;
+  margin-top: 40px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sponsors__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sponsors__img {
+  max-width: 100%;
+}
+
+#Pacenia {
+  width: 100px;
+}
+
+#huari {
+  width: 100px;
+}
+
+#Guarana {
+  width: 70px;
+}
+
 @media screen and (max-width: 1366px) {
   body {
     font-size: 16px;

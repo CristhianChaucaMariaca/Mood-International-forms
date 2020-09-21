@@ -1,16 +1,16 @@
-mixin plato_body(plates,nombre)
+mixin plato_body(plates,nombre,num)
     .content__plate
         each plato in plates.content
             if(plato.text == nombre) 
-                +plato(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,sponsor[0],plates.category)
+                +plato(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,sponsor[num],plates.category)
 
-mixin plato_bodydos(plates,nombre)
+mixin plato_bodydos(plates,nombre,num)
     .content__plate
         each plato in plates.content
             if(plato.text == nombre) 
-                +platoDos(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,sponsor[0],plates.category,"15 cm","25 cm")
-mixin plato_bodytres(plates,nombre)
+                +platoDos(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,sponsor[num],plates.category,"15 cm","25 cm")
+mixin plato_bodytres(plates,nombre,num)
     .content__plate
         each plato in plates.content
             if(plato.text == nombre) 
-                +platoDos(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,sponsor[0],plates.category,"M","G")
+                +platoDos(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,sponsor[num],plates.category,"M","G")

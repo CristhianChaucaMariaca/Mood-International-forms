@@ -4,13 +4,13 @@ append config
     // TODO: * modificar variable objeto
     each plato in sandwiches.content
         // TODO: * modificar variable TITULO
-        if(plato.text == "Sw Roast Beef")
+        if(plato.text == "Roast Beef")
             - page = plato.text
             - metadescripcion = plato.description
 block content
     include ../../mixins/plato-body
     // TODO: * Modificar nombre de Objeto
-    +plato_bodydos(sandwiches, "Sw Roast Beef")
+    +plato_bodydos(sandwiches, "Roast Beef",5)
             
     include ../../blocks/btn_atras
     //- TODO: * Modificar nombre de objeto para category
