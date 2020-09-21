@@ -180,6 +180,22 @@ body {
   margin-top: 1.4em;
   margin-bottom: 1.4em;
 }
+.headerdishes__container {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+.headerdishes__img {
+  width: 100%;
+  z-index: 18;
+}
+.headerdishes__text {
+  position: absolute;
+  transform: translateY(42%) translateX(-50%);
+  left: 50%;
+  bottom: 50%;
+  width: 95%;
+}
 
 .dishes {
   display: grid;
