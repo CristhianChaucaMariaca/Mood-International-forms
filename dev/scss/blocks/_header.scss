@@ -1,11 +1,11 @@
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    &__logo{
-        width: 280px;
-        transform: translateX(-10%);
-    }
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  &__logo {
+    width: 280px;
+    transform: translateX(-5%);
+  }
 }
