@@ -2,8 +2,8 @@ include sponsor
 mixin plato(img,title,price,pricetwo,ingredients,sponsor,category)
     .plate
         .plate__img
-            .plate__logo
-                img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+            //- .plate__logo
+            //-     img(src="media/"+logo.img+logo.extention, alt=logo.alt)
             picture.plate__cont__picture
                 img.plate__picture(srcset="media/"+category+"/"+img.picture+img.extention, alt=title)
         .container
@@ -18,8 +18,8 @@ mixin plato(img,title,price,pricetwo,ingredients,sponsor,category)
 mixin platoDos(img,title,price,pricetwo,ingredients,sponsor,category, detalle1,detalle2)
     .plate
         .plate__img
-            .plate__logo
-                img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+            //- .plate__logo
+            //-     img(src="media/"+logo.img+logo.extention, alt=logo.alt)
             picture.plate__cont__picture
                 img.plate__picture(srcset="media/"+category+"/"+img.picture+img.extention, alt=title)
         .container
