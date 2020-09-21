@@ -295,6 +295,7 @@ body {
   margin: 0 auto;
   font-size: 1rem;
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 .lists__header {
   text-align: center;
@@ -302,12 +303,18 @@ body {
   position: relative;
   margin: 0 auto;
 }
+.lists__title {
+  font-size: 1.35em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "bold";
+}
 .lists__item {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 .lists__name {
   font-size: 1.3em;
@@ -315,7 +322,26 @@ body {
 .lists__line {
   flex-grow: 1;
   border-bottom: 2px #472C0F;
-  border-bottom-style: dotted;
+}
+.lists--uno {
+  flex-grow: 1;
+}
+.lists--prices {
+  width: 70px;
+  text-align: center;
+}
+.lists__names {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+.lists__drinkname {
+  height: 1px;
+  flex-grow: 1;
+}
+.lists__name-price {
+  width: 70px;
+  text-align: center;
 }
 
 .btn {
