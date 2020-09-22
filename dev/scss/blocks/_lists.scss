@@ -1,10 +1,10 @@
 .lists {
+  font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto;
-  font-size: 1rem;
   margin-bottom: 50px;
   margin-top: 30px;
-
+  color: $colorprimario;
   &__header {
     text-align: center;
     width: 14em;
@@ -27,14 +27,13 @@
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 7px;
+    position: relative;
   }
   &__name {
-    font-size: 1.3em;
-  }
-  &__line {
+    font-size: 1em;
     flex-grow: 1;
-    border-bottom: 2px $colorprimario;
   }
+
   &--uno {
     flex-grow: 1;
   }
@@ -54,5 +53,45 @@
   &__name-price {
     width: 70px;
     text-align: center;
+  }
+  &__price {
+    width: 70px;
+    text-align: right;
+  }
+  &__price--right {
+    text-align: right;
+    width: 50px;
+  }
+}
+.chops {
+  display: flex;
+  flex-direction: column;
+  &__header {
+    display: flex;
+  }
+  &__name {
+    min-height: 1px;
+    width: 70px;
+    text-align: right;
+    &:first-child {
+      flex-grow: 1;
+    }
+  }
+  &__name-bebida {
+    flex-grow: 1;
+  }
+  &__price {
+    text-align: right;
+  }
+  &__body {
+    display: flex;
+    flex-direction: row;
+  }
+  &__prices {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+  }
+  &__items {
+    flex-grow: 1;
   }
 }
