@@ -88,4 +88,9 @@
   .btn {
     width: 80px;
   }
+  .sponsors {
+    &__body {
+      flex-direction: column;
+    }
+  }
 }

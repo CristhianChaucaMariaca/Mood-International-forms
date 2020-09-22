@@ -589,6 +589,10 @@ body {
   .btn {
     width: 80px;
   }
+
+  .sponsors__body {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 320px) {
   body {
