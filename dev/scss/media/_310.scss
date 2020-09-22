@@ -1,40 +1,47 @@
-@media screen and(max-width:320px){
-    body{
-        font-size: 16px;
+@media screen and(max-width:320px) {
+  body {
+    font-size: 16px;
+  }
+  .headerdishes {
+    margin-top: 1em;
+    &__container {
+      font-size: 0.8em;
     }
-    .headerdishes
-    {
-        margin-bottom: .5em;
-        margin-top: 1em;
+  }
+  .dishes {
+    &__plate {
+      width: 100%;
+      height: auto;
     }
-    .dishes{
-        &__plate{
-            width: 100%;
-            height: auto;
-        }
-        &__name{
-            font-size: .9em;
-        }
+    &__name {
+      font-size: 0.9em;
     }
-    .menu{
-        grid-column-gap: 10px;
-        &__item{
-            width: 90%;
-            font-size: 1.4em;
-        }
+  }
+  .header {
+    margin-bottom: 0px;
+  }
+  .menu {
+    grid-column-gap: 10px;
+    &__item {
+      width: 90%;
+      font-size: 1.6em;
     }
-    .lists{
-        font-size: 1.1rem;
+  }
+  .lists {
+    font-size: 1.1rem;
+  }
+  .plate {
+    &__img {
+      width: 85%;
     }
-    .plate{
-        &__title{
-            font-size: 1.2em;
-        }
-        &__text{
-            font-size: 1em;
-        }
-        &__price{
-            font-size: 1.2em;
-        }
+    &__title {
+      font-size: 1.3em;
     }
+    &__text {
+      font-size: 1.2em;
+    }
+    &__price {
+      font-size: 1.3em;
+    }
+  }
 }

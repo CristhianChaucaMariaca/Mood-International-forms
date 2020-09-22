@@ -1,52 +1,54 @@
-.menu{
-    width: 100wh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    margin-top: 20px;
-    &__body{
-        max-width: 800px;
-        display: block;
+.menu {
+  width: 100wh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  &__body {
+    max-width: 800px;
+    display: block;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 20px;
+    justify-items: center;
+  }
+  &__item {
+    text-decoration: none;
+    text-align: center;
+    color: $colorsecundario;
+    position: relative;
+    font-size: 1.5em;
+    width: 250px;
+    font-family: $font;
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s;
     }
-    
-    &__nav{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4,1fr);
-        grid-column-gap: 60px;
-        grid-row-gap: 20px;
-        justify-items: center;
+    &:nth-child(3) {
+      grid-column-start: 1;
+      grid-column-end: -1;
     }
-    &__item{
-        text-decoration: none;
-        text-align: center;
-        color:$colorsecundario;
-        position: relative;
-        font-size: 1.3em;
-        width: 180px;
-        font-family: $font;
-        &:hover{
-            transform: scale(1.05);
-            transition:all .3s;
-        }
-        &:nth-child(3){
-            grid-column-start: 1;
-            grid-column-end: -1;
-        }
-        &:last-child{
-            grid-column-start: 1;
-            grid-column-end: -1;
-        }
+    &:last-child {
+      grid-column-start: 1;
+      grid-column-end: -1;
     }
-    &__btn{
-        width: 100%;
+    img {
     }
-    &__text{
-        position: absolute;
-        z-index: 100;
-        bottom: 50%;
-        right: 50%;
-        transform: translateX(50%) translateY(45%);
-    }
+  }
+  &__btn {
+    width: 100%;
+  }
+  &__text {
+    position: absolute;
+    z-index: 100;
+    bottom: 55%;
+    right: 50%;
+    transform: translateX(50%) translateY(45%);
+  }
 }

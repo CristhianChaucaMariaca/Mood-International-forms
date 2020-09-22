@@ -28,7 +28,7 @@ body {
 }
 
 .cotainer_full {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .menu__body {
   max-width: 800px;
@@ -84,8 +84,8 @@ body {
   text-align: center;
   color: #000;
   position: relative;
-  font-size: 1.3em;
-  width: 180px;
+  font-size: 1.5em;
+  width: 250px;
   font-family: "font1";
 }
 .menu__item:hover {
@@ -106,7 +106,7 @@ body {
 .menu__text {
   position: absolute;
   z-index: 100;
-  bottom: 50%;
+  bottom: 55%;
   right: 50%;
   transform: translateX(50%) translateY(45%);
 }
@@ -239,12 +239,12 @@ body {
 }
 
 .content__plate {
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 30px;
 }
 
@@ -279,11 +279,12 @@ body {
   padding-right: 30px;
 }
 .plate__title {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
   font-family: "bold";
+  text-transform: uppercase;
 }
 .plate__price {
   text-align: center;
@@ -393,7 +394,7 @@ body {
 .sponsors__content {
   width: 60px;
   align-self: start;
-  margin-top: 40px;
+  margin-top: 70px;
   align-self: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -427,7 +428,7 @@ body {
 }
 @media screen and (min-width: 1367px) {
   body {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .plate {
@@ -436,9 +437,15 @@ body {
   .plate__logo {
     width: 10.625rem;
   }
+
   .lists {
     font-size: 1.5rem;
     max-width: 100%;
+  }
+
+  .menu__item {
+    width: 18.75rem;
+    font-size: 1.6em;
   }
 }
 @media screen and (max-device-width: 768px) {
@@ -463,7 +470,9 @@ body {
   }
 
   .plate {
-    width: 480px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 22px;
   }
   .plate__img {
@@ -499,6 +508,9 @@ body {
 
   .headerdishes {
     margin-bottom: 15px;
+  }
+  .headerdishes__container {
+    width: 70%;
   }
 
   .dishes {
@@ -584,8 +596,10 @@ body {
   }
 
   .headerdishes {
-    margin-bottom: 0.5em;
     margin-top: 1em;
+  }
+  .headerdishes__container {
+    font-size: 0.8em;
   }
 
   .dishes__plate {
@@ -596,25 +610,32 @@ body {
     font-size: 0.9em;
   }
 
+  .header {
+    margin-bottom: 0px;
+  }
+
   .menu {
     grid-column-gap: 10px;
   }
   .menu__item {
     width: 90%;
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 
   .lists {
     font-size: 1.1rem;
   }
 
+  .plate__img {
+    width: 85%;
+  }
   .plate__title {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .plate__text {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .plate__price {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
