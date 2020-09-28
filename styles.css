@@ -90,6 +90,9 @@ body {
   font-size: 1.5em;
   width: 250px;
   font-family: "font1";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu__item:hover {
   transform: scale(1.05);
@@ -109,9 +112,6 @@ body {
 .menu__text {
   position: absolute;
   z-index: 100;
-  bottom: 55%;
-  right: 50%;
-  transform: translateX(50%) translateY(45%);
 }
 
 .ocultar {
@@ -572,6 +572,10 @@ body {
     text-align: center;
     line-height: 0.92em;
   }
+  .content__plate {
+    padding-bottom: 0px;
+  }
+
   .plate {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -612,6 +616,8 @@ body {
 
   .menu {
     width: 100%;
+    margin-top: 0px;
+    padding-bottom: 20px;
   }
   .menu__nav {
     grid-template-columns: repeat(1, 1fr);

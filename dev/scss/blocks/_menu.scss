@@ -26,6 +26,9 @@
     font-size: 1.5em;
     width: 250px;
     font-family: $font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
       transform: scale(1.05);
       transition: all 0.3s;
@@ -47,8 +50,5 @@
   &__text {
     position: absolute;
     z-index: 100;
-    bottom: 55%;
-    right: 50%;
-    transform: translateX(50%) translateY(45%);
   }
 }
