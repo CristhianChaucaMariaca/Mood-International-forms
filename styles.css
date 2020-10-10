@@ -497,7 +497,7 @@ body {
     font-size: 1.6em;
   }
 }
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
