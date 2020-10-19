@@ -315,7 +315,7 @@ body {
   font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 130px;
   color: #000;
 }
 .lists__header {
@@ -443,7 +443,7 @@ body {
 .sponsors__content {
   width: 60px;
   align-self: start;
-  margin-top: 70px;
+  margin-top: 10px;
   align-self: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -641,8 +641,20 @@ body {
     width: 80px;
   }
 
-  .sponsors__body {
-    flex-direction: column;
+  .sponsors__content {
+    width: 50px;
+  }
+
+  #Pacenia {
+    width: 85px;
+  }
+
+  #huari {
+    width: 85px;
+  }
+
+  #Guarana {
+    width: 60px;
   }
 
   .lists__content {
